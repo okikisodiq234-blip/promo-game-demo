@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Promo Game Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Promo Game Demo</h1>
+    <p>Gamified engagement for brands & businesses</p>
+
+    <button onclick="playGame()">Launch Promotion</button>
+    <p id="result"></p>
+  </div>
+
+  <script>
+    function playGame() {
+      const messages = [
+        "Reward unlocked. Engagement recorded.",
+        "Promotion completed successfully.",
+        "Traffic boost event triggered."
+      ];
+
+      const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+      document.getElementById("result").innerText = randomMessage;
+    }
+  </script>
+</body>
+</html>
 
